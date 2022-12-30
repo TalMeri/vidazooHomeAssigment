@@ -1,0 +1,22 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "build": "cd client && yarn install && yarn run build"
+  },
+  "engines": {
+    "node": "16.16.0"
+  },
+  "dependencies": {
+    "axios": "^1.2.1",
+    "express": "^4.18.2",
+    "follow-redirects": "^1.15.2",
+    "node-cache": "^5.1.2",
+    "psl": "^1.9.0",
+    "superagent": "^8.0.6",
+    "valid-url": "^1.0.9"
+  }
+}

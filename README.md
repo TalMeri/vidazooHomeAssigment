@@ -10,7 +10,8 @@ backend - Node.js
 
 ### bonus points
 - link to the site:
-- Sort and search the results table
+- Sort the results table (click on the header for sorting)
+- filter the results table by domain name (Search in table)
 - Added Loader to the UI (when we wait for the results)
 - Allow downloading a JSON representation of the results from the UI
 - Added caching to the server

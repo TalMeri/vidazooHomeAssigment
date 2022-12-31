@@ -1,7 +1,8 @@
+import "./SearchBar.css";
 import React, { useState } from "react";
 import Button from "../Button/Button";
 import Input from "../Input/Input";
-import "./SearchBar.css";
+
 
 const SearchBar = ({ onChange, onClick, label }) => {
   const [searchedText, setSerchedText] = useState("");

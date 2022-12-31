@@ -1,12 +1,10 @@
 import React from "react";
 import "./Error.css";
 
-
-const Error = ({label}) => {
-
+const Error = ({ label }) => {
   return (
     <div className="errorContianer">
-    <span className="errorText">{label}</span>
+      <span className="errorText">{label}</span>
     </div>
   );
 };

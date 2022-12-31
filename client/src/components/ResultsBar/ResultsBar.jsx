@@ -1,8 +1,7 @@
+import "./ResultsBar.css";
 import React from "react";
-import { Card, Row, Col } from "react-bootstrap";
 import Input from "../Input/Input";
 import Button from "../Button/Button";
-import "./ResultsBar.css";
 
 const ResultsBar = ({ setSearchVal, results, domain, parseTime }) => {
   const handleDownload = () => {
@@ -27,7 +26,8 @@ const ResultsBar = ({ setSearchVal, results, domain, parseTime }) => {
   return (
     <div className="ResultsBarContainer">
       <div className="ResultsBarCol">
-        <Input className="searchBar"
+        <Input
+          className="searchBar"
           placeholder={"Search domain"}
           onChange={(val) => {
             setSearchVal(val.target.value);
@@ -47,33 +47,6 @@ const ResultsBar = ({ setSearchVal, results, domain, parseTime }) => {
         <Button results={results} onClick={handleDownload} label="Download" />
       </div>
     </div>
-    //   {/* <Card> */}
-
-    //     <Card.Body style={{ padding: "8px" }}>
-    //       <Row>
-    //         <Col style={{ margin: "auto" }}>
-    //           <Textfield
-    //             placeholder={"search domain"}
-    //             onChange={(val) => {
-    //               setSearchVal(val.target.value);
-    //             }}
-    //             size="sm"
-    //           />
-    //         </Col>
-    //         <Col style={{ margin: "auto" }}> Domain: {domain} </Col>
-    //         <Col style={{ margin: "auto" }}>Total advertisers: {results.length}</Col>
-    //         <Col style={{ margin: "auto" }}>Parse time: {parseTime}</Col>
-    //         <Col style={{ margin: "auto" }}>
-    //           <Button
-    //             results={results}
-    //             onClick={handleDownload}
-    //             label="Download"
-    //           />
-    //         </Col>
-    //       </Row>
-    //     </Card.Body>
-    //   {/* </Card>{" "} */}
-    // </div>
   );
 };
 

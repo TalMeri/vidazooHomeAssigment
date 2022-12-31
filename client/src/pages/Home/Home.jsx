@@ -6,7 +6,6 @@ import Results from "../../components/Results/Results";
 import axios from "axios";
 import { Spinner } from "react-bootstrap";
 
-
 const Home = () => {
   const [searchValue, setSearchValue] = useState("");
   const [domain, setDomain] = useState(null);

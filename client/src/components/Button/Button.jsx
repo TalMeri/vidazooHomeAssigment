@@ -1,25 +1,11 @@
-import React from "react";
 import "./Button.css";
-// import { Button as BootstrapButton } from 'react-bootstrap';
+import React from "react";
 
-const Button = ({ label, color, disabled, size, variant, onClick }) => {
-  // return (
-  //   <BootstrapButton
-  //     color={color}
-  //     disabled={disabled}
-  //     size={size}
-  //     variant={variant}
-  //     onClick={onClick}>
-  //     {label}</BootstrapButton>
-  // );
+const Button = ({ label, disabled, onClick }) => {
   return (
-    <button className="button"
-      // color={color}
-      disabled={disabled}
-      // size={size}
-      // variant={variant}
-      onClick={onClick}>
-      {label}</button>
+    <button className="button" disabled={disabled} onClick={onClick}>
+      {label}
+    </button>
   );
 };
 

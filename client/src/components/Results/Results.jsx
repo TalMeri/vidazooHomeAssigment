@@ -1,7 +1,7 @@
+import "./Results.css";
 import React from "react";
 import { useState } from "react";
 import ResultsBar from "../ResultsBar/ResultsBar";
-import "./Results.css";
 import { ArrowUpCircleFill, ArrowDownCircleFill } from "react-bootstrap-icons";
 import Error from "../Error/Error";
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
+import Home from "./pages/Home/Home";
 
 
 const AppRouter = () => {
@@ -8,7 +8,7 @@ const AppRouter = () => {
       <Router basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route exact path="/"  element={<Home />}/>
-          <Route exact path="/:domain"  element={<Home />}/>
+          {/* <Route exact path="/:domain"  element={<Home />}/> */}
         </Routes>
       </Router>
   );

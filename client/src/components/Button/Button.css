@@ -1,0 +1,25 @@
+.button {
+    border: 2px solid #1cc08c;
+    letter-spacing:1px;
+    width: auto;
+    height: 38px;
+    background-color:white;
+    border-radius: 10px;
+    margin: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    color:#1cc08c;
+    font-family: 'Montserrat', sans-serif;
+    padding: 7px;
+    align-items: center;
+
+}
+.button:not(:disabled):hover {
+    color:white;
+    background-color: #1cc08c;
+    
+}
+.button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}

@@ -7,7 +7,7 @@ const Table = ({columns, tableData, handleSorting}) => {
 
 return (
   <BootstrapTable bordered hover> 
-    <TableHead columns={columns} handleSorting={handleSorting} />
+    <TableHead columns={columns} handleSorting={handleSorting}/>
     <TableBody tableData={tableData} columns={columns} />
   </BootstrapTable>
 )};

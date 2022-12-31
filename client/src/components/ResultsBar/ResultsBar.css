@@ -1,0 +1,13 @@
+.ResultsBarContainer {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #818181;
+    border-radius: 4px;
+}
+
+.ResultsBarCol {
+ width: 25%;
+ margin: auto;
+ text-align: center;
+}

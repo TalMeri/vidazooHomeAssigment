@@ -41,7 +41,7 @@ const ResultsBar = ({ setSearchVal, results, domain, parseTime }) => {
         <b>Total advertisers:</b> {results.length}
       </div>
       <div className="ResultsBarCol">
-        <b>Parse time:</b> {parseTime}
+        <b>Parse time:</b> {parseTime}ms
       </div>
       <div className="ResultsBarCol">
         <Button results={results} onClick={handleDownload} label="Download" />

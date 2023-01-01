@@ -1,4 +1,4 @@
-# vidazooHomeAssigment
+# vidazooHomeAssignment
 FullStack web application </br>
 
 web app that allow the following:

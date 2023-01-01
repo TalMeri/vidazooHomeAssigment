@@ -18,7 +18,7 @@ backend - Node.js
 
 ### Run the Project
 - Server side:
-  - cd sever
+  - cd server
   - yarn install
   - yarn run start
 - Client side:

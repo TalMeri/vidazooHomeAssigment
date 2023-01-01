@@ -26,3 +26,5 @@ Backend - Node.js.
   - yarn install
   - yarn run client
 
+### Author
+Tal Meridor

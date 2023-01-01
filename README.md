@@ -9,7 +9,7 @@ frontend - React JSX </br>
 backend - Node.js
 
 ### bonus points
-- link to the site:
+- link to the site: https://vidazoohomeassignment.onrender.com/ (deployed using render.com)
 - Sort the results table (click on the header for sorting)
 - filter the results table by domain name (Search in table)
 - Added Loader to the UI (when we wait for the results)

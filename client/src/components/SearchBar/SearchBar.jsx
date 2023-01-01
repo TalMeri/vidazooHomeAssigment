@@ -13,12 +13,11 @@ const SearchBar = ({ onChange, onClick, label }) => {
   };
 
   return (
-    <div className="searchBarContianer">
+    <div className="searchBarContainer">
       <Input
         placeholder={"Enter domain name (e.g msn.com)"}
-        className={"shadow-sm w-50"}
         onChange={onTextChanged}
-        width="350px"
+        classAsProp={"big"}
       />
       <Button label={label} onClick={onClick} disabled={!searchedText} />
     </div>

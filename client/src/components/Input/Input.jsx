@@ -1,11 +1,10 @@
 import "./Input.css";
 import React from "react";
 
-const Input = ({ placeholder, onChange, width }) => {
+const Input = ({ placeholder, onChange, classAsProp }) => {
   return (
     <input
-      className="textField"
-      style={{ width }}
+      className={`textField ${classAsProp}`}
       placeholder={placeholder}
       onChange={onChange}
     ></input>

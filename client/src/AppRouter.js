@@ -8,7 +8,6 @@ const AppRouter = () => {
       <Router basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route exact path="/"  element={<Home />}/>
-          {/* <Route exact path="/:domain"  element={<Home />}/> */}
         </Routes>
       </Router>
   );

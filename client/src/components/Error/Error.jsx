@@ -3,7 +3,7 @@ import "./Error.css";
 
 const Error = ({ label }) => {
   return (
-    <div className="errorContianer">
+    <div className="errorContainer">
       <span className="errorText">{label}</span>
     </div>
   );

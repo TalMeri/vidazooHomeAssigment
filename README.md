@@ -1,4 +1,4 @@
-# vidazooHomeAssigment
+# vidazooHomeAssignment
 FullStack web application </br>
 
 web app that allow the following:
@@ -18,7 +18,7 @@ backend - Node.js
 
 ### Run the Project
 - Server side:
-  - cd sever
+  - cd server
   - yarn install
   - yarn run start
 - Client side:

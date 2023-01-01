@@ -5,7 +5,12 @@ import Button from "../Button/Button";
 
 const ResultsBar = ({ setSearchVal, results, domain, parseTime }) => {
   const handleDownload = () => {
-    const resultsJson = JSON.stringify({ results });
+    const resultsJson = JSON.stringify({
+      domain,
+      parseTime,
+      totalAdvertisers: results.length,
+      results,
+    });
     const file = new Blob([resultsJson], { type: "application/json" });
     if (window.navigator.msSaveOrOpenBlob)
       window.navigator.msSaveOrOpenBlob(file, `adsTxt_${domain}.json`);
@@ -41,7 +46,7 @@ const ResultsBar = ({ setSearchVal, results, domain, parseTime }) => {
         <b>Total advertisers:</b> {results.length}
       </div>
       <div className="ResultsBarCol">
-        <b>Parse time:</b> {parseTime}ms
+        <b>Parse time:</b> {parseTime == 0 ? "Chached" : `${parseTime}ms`}
       </div>
       <div className="ResultsBarCol">
         <Button results={results} onClick={handleDownload} label="Download" />

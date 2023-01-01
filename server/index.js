@@ -8,7 +8,6 @@ const app = express();
 const parser = require("./parser");
 app.use("/parser", parser);
 
-// Have Node serve the files for our built React app
 app.use(express.static(path.resolve(__dirname, '../client/build')));
 
 app.get('*', (req, res) => {

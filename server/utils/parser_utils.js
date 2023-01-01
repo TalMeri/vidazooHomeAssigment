@@ -4,7 +4,8 @@ const myCache = new NodeCache();
 
 function getDomainUrl(searchedVal) {
   //convert search value to full url to ads.txt
-  const searchedValSplit = searchedVal.split("/");
+  const searchedValLowerCase = searchedVal.toLowerCase()
+  const searchedValSplit = searchedValLowerCase.split("/");
   let hostName = "";
   let fullUrl = "";
   if (searchedVal.indexOf("//") > -1) {
@@ -51,7 +52,7 @@ async function getCount(searchedVal) {
 
   if (myCache.has(domain)) {
     const chachRes = myCache.get(domain);
-    chachRes["ParseTime"] = "Chached";
+    chachRes["ParseTime"] = 0;
     return chachRes;
   } else {
     const fileArray = await getFileArray(fullUrl);
@@ -73,7 +74,8 @@ async function getCount(searchedVal) {
     };
     myCache.set(domain, jsonRes);
     const time = process.hrtime(startTime);
-    jsonRes["ParseTime"] = (time[0] * 1000 + time[1]) / 1000000;
+    const ParseTime = (time[0] * 1000 + time[1]) / 1000000;
+    jsonRes["ParseTime"] = +ParseTime.toFixed(3)
     return jsonRes;
   }
 }

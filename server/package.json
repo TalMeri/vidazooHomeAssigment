@@ -1,11 +1,10 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.jsx",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js",
-    "build": "cd client && yarn install && yarn run build"
+    "start": "node index.js"
   },
   "engines": {
     "node": "16.16.0"

@@ -47,7 +47,7 @@ const Results = ({ results, handleSorting, isError, domain, parsedTime }) => {
   return (
     <>
       {isError ? (
-        <div className="errorContainer"><Error label={"Failed to parse Ads.txt"}/></div>
+        <div className="errorBox"><Error label={"Failed to parse Ads.txt"}/></div>
       ) : results ? (
         <div className="resultsBarContainer">
           <ResultsBar setSearchVal={setSearchVal} results={results} domain={domain} parseTime={parsedTime}/>
